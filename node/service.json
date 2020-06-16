@@ -6,7 +6,7 @@
   "maxReplicas": 10,
   "workers": 4,
   "routes": {
-    "getProducts": {
+    "getLiveUsers": {
       "path": "/_v/live-products",
       "public": true
     }

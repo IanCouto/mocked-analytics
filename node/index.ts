@@ -5,7 +5,7 @@ import {
   ServiceContext,
   RecorderState,
 } from '@vtex/api'
-import { getLiveUsers } from './routes/getLiveUsers'
+import { getLiveUsers } from './handlers/getLiveUsers'
 
 declare global {
   type Context = ServiceContext<IOClients, State>
@@ -17,10 +17,6 @@ declare global {
 
 export default new Service<IOClients, State, ParamsContext>({
   routes: {
-    getProducts: (ctx: any) => {
-      getLiveUsers(ctx)
-      ctx.body = 'retrieved live products'
-      ctx.status = 200
-    },
+    getLiveUsers,
   },
 })

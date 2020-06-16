@@ -1,6 +1,6 @@
 import { getRandomNumber } from '../utils/randomNumber'
 
-export async function getLiveUsers(ctx: Context): Promise<LiveUsersProduct[]> {
+export async function getLiveUsers(ctx: Context) {
   let liveUsers: LiveUsersProduct[] = []
   let productsQdt = getRandomNumber(1, 10)
   for (productsQdt; productsQdt > 0; productsQdt--) {
@@ -11,7 +11,6 @@ export async function getLiveUsers(ctx: Context): Promise<LiveUsersProduct[]> {
   }
   ctx.status = 200
   ctx.body = liveUsers
-  return liveUsers
 }
 
 export interface LiveUsersProduct {
