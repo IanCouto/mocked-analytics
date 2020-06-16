@@ -8,7 +8,19 @@
   "routes": {
     "getLiveUsers": {
       "path": "/_v/live-products",
-      "public": true
+      "public": false,
+      "access": "authorized",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "get"
+          ],
+          "principals": [
+            "vrn:apps:*:*:*:app/vtex.backend-course@*"
+          ]
+        }
+      ]
     }
   }
 }
