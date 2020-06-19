@@ -6,7 +6,7 @@ export async function getLiveUsers(ctx: Context) {
   for (productsQdt; productsQdt > 0; productsQdt--) {
     liveUsers.push({
       slug: Math.floor(Math.random() * (2000 - 1000 + 1) + 1000).toString(),
-      liveUsers: Math.floor(Math.random() * (10 - 1 + 1) + 1),
+      liveUsers: Math.floor(Math.random() * (5 - 1 + 1) + 1),
     })
   }
   ctx.status = 200
