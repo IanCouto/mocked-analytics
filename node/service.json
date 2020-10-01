@@ -17,7 +17,8 @@
             "get"
           ],
           "principals": [
-            "vrn:apps:*:*:*:app/vtex.backend-course@*"
+            "vrn:apps:*:*:*:app/vtex.backend-course@*",
+            "vrn:apps:*:*:*:app/vtex.events-example@*"
           ]
         }
       ]
