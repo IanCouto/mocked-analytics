@@ -1,7 +1,7 @@
 {
   "name": "mocked-analytics",
   "vendor": "vtex",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Mocked Analytics",
   "description": "Service to provide mocked Live Products data",
   "dependencies": {},
