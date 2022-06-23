@@ -8,6 +8,7 @@
     "@vtex/api": "6.45.12",
     "eslint": "^6.3.0",
     "eslint-config-vtex": "^11.0.0",
+    "logicinfopartnerbr.mocked-analytics": "https://ian--logicinfopartnerbr.myvtex.com/_v/private/typings/linked/v1/logicinfopartnerbr.mocked-analytics@0.0.1+build1655925852/public/_types/react",
     "prettier": "^1.18.2",
     "typescript": "3.9.7"
   },
